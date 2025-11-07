@@ -1,0 +1,4 @@
+body { background-color: #f7f7f7; }
+.card { box-shadow: 0 2px 4px rgba(0,0,0,0.08); }
+.product-card:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.12); }
+.badge { user-select: none; }
