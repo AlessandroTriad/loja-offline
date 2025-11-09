@@ -76,7 +76,7 @@ export class Cart {
       )
       .join("");
 
-    // Event delegation for qty +/- and remove
+    
     this.listEl.querySelectorAll("button[data-action]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const action = (btn as HTMLButtonElement).dataset.action!;
