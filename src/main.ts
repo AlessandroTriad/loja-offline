@@ -35,7 +35,7 @@ async function bootstrap(): Promise<void> {
       alert('Pedido finalizado com sucesso!');
     });
 
-    // Expose add to cart for buttons
+    
     (window as any).addToCart = async (id: number) => {
       const prod = await db.produtos.get(id);
       if (prod) cart.add(prod);
