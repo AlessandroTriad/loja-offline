@@ -7,7 +7,7 @@ export function getOrCreateUser(): User {
     const raw = localStorage.getItem(LS_KEY);
     if (raw) return JSON.parse(raw) as User;
   } catch {
-    // ignore parse/storage errors and recreate
+    
   }
   const user: User = { id: crypto.randomUUID(), nome: "Usuário Demo" };
   localStorage.setItem(LS_KEY, JSON.stringify(user));
